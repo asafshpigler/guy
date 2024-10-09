@@ -1,6 +1,6 @@
 #!/bin/bash
-guylikes=("mcdonalds" "age of empires" "naruto")
-guyis=("29 years old" "programmer boi" "bad at sleeping")
+guylikes=("mcdonalds" "age of empires" "naruto" "bug butts and he cannot lie" "xxxtentacion" "friends" "joker" "drugs" "atent" "some more atent" "eminem" "taxonomies")
+guyis=("29 years old" "programmer boi" "bad at sleeping" "tall" "key glock" "shooter" "taylor swift fan")
 random_index=$((RANDOM % ${#guyis[@]}))
 
 if [ -z "$1" ]; then
