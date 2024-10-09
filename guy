@@ -1,0 +1,15 @@
+#!/bin/bash
+guylikes=("mcdonalds" "age of empires" "naruto")
+guyis=("29 years old" "programmer boi" "bad at sleeping")
+random_index=$((RANDOM % ${#guyis[@]}))
+
+if [ -z "$1" ]; then
+  echo "What about him?"
+  exit 1
+elif [ "$1" == "is" ]; then
+  echo "${guyis[$random_index]}"
+elif [ "$1" == "likes" ]; then
+  echo "${guylikes[$random_index]}"
+else
+  echo "Unknown parameter"
+fi
